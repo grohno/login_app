@@ -1,5 +1,11 @@
+<article class="user_show">
+
+
 <h1><%= @user.name %>のページ</h1>
 <p>メールアドレス: <%= @user.email %></p>
+
+<h3>あなたの記事がお気に入り登録された合計数</h3>
+<p><%= @favorited_total_counts %>件</p>
 
 <h3>お気に入り一覧</h3>
 <table>
@@ -21,3 +27,4 @@
     <% end %>
   </tbody>
 </table>
+</article>
